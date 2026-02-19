@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Skill;
+use App\Models\Project;
 
 class SkillController extends Controller
 {
     public function index() 
     {
-        $skills = Skill::all();
+        $projects = Skill::all();
         
-        return view('pages.skills', compact('skills'));
+        return view('pages.projects', compact('projects'));
     }
 }

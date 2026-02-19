@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Skill extends Model
+{
+    protected $table = 'skills';
+    protected $fillable = [
+        'full_name',
+        'title',
+        'bio',
+        'email',
+        'location'
+    ];
+}
