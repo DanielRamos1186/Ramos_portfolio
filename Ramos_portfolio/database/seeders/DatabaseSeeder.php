@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             ExperiencesTableSeeder::class,
             ProjectsTableSeeder::class,
             HomeTableSeeder::class,
+            ContanctTableSeeder::class,
         ]);
     }
 }
