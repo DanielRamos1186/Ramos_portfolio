@@ -1,6 +1,6 @@
 @extends('layouts.content')
 
-@section('title', 'Home')
+@section('title', 'Skills')
 
 @section('content')
 <div class="container mt-4">
@@ -8,15 +8,15 @@
         <table class="table table-bordered">
             <thead> 
                 <tr>
-                    <th></th>
-                    <th></th>
+                    <th>Name</th>
+                    <th>Level</th>
                 </tr>
         </thead>
         <tbody>
             @foreach ($skills as $skill)
                 <tr>
-                    <td>{{ $skill ->name }}</td>
-                    <td>{{ $skill ->level }}</td>
+                    <td>{{ $skill->name }}</td>
+                    <td>{{ $skill->level }}</td>
                 </tr>
             @endforeach 
         </tbody>
