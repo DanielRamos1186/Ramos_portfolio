@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Home;
 
-class SkillController extends Controller
+class HomeController extends Controller
 {
     public function index() 
     {
-        $home = Skill::all();
+        $home = Home::all();
         
         return view('pages.home', compact('home'));
     }

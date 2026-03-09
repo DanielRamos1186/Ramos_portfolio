@@ -5,14 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Skill extends Model
+class Home extends Model
 {
-    protected $table = 'skills';
+    use HasFactory;
+
+    // the `profiles` table stores the home/profile data
+    protected $table = 'profiles';
+
     protected $fillable = [
         'full_name',
         'title',
         'bio',
         'email',
-        'location'
+        'location',
     ];
 }

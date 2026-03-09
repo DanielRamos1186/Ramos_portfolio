@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Project;
 
-class SkillController extends Controller
+class ProjectController extends Controller
 {
     public function index() 
     {
-        $projects = Skill::all();
+        $projects = Project::all();
         
         return view('pages.projects', compact('projects'));
     }

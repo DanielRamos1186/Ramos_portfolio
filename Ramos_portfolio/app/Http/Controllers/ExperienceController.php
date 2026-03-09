@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Experience;
 
-class SkillController extends Controller
+class ExperienceController extends Controller
 {
     public function index() 
     {
-        $experiences = Skill::all();
+        $experiences = Experience::all();
         
         return view('pages.experiences', compact('experiences'));
     }
