@@ -9,8 +9,8 @@
             <thead> 
                 <tr>
                     <th>Role</th>
-                    <th>Organization</th>
                     <th>Description</th>
+                    <th>Organization</th>
                     <th>Year</th>
                 </tr>
         </thead>
@@ -18,8 +18,8 @@
             @foreach ($experiences as $exp)
                 <tr>
                     <td>{{ $exp->role }}</td>
-                    <td>{{ $exp->organization }}</td>
                     <td>{{ $exp->description }}</td>
+                    <td>{{ $exp->organization }}</td>
                     <td>{{ $exp->year }}</td>
                 </tr>
             @endforeach 

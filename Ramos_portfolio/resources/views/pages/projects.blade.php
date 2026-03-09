@@ -10,7 +10,6 @@
                 <tr>
                     <th>Title</th>
                     <th>Description</th>
-                    <th>Tech Stack</th>
                     <th>Year</th>
                 </tr>
         </thead>
@@ -19,7 +18,6 @@
                 <tr>
                     <td>{{ $project->title }}</td>
                     <td>{{ $project->description }}</td>
-                    <td>{{ $project->tech_stack }}</td>
                     <td>{{ $project->year }}</td>
                 </tr>
             @endforeach 
